@@ -21,6 +21,42 @@ h1{
 }
 
 /* body */
+header {
+  position: fixed;
+  top: 10;
+  right: 10;
+  background: none;
+}
+
+.fixed_menu ul {
+  -webkit-padding-start: 0;
+  padding: none;
+
+}
+
+.fixed_menu ul li {
+  list-style: none;
+  font-family: 游ゴシック;
+  text-align: center;
+}
+
+.fixed_menu ul li a {
+  list-style: none;
+  text-decoration: none;
+  padding: 10px 40px;
+  display: block;
+  transition: 0.2s;
+}
+
+.fixed_menu ul li a:visited {
+  color: #FFF;
+}
+
+.fixed_menu ul li a:hover {
+  background: #FFF;
+  color: #3949AB;
+}
+
   /* about */
   /* data */
     /* data-readers */
