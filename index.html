@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>関西学生フリーペーパー moco ガイド</title>
     <link rel="stylesheet" href="style.css">
@@ -9,23 +9,25 @@
     <script src="moco.js" charset="utf-8"></script>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <style>
-			svg { border: 1px solid black; }
-		</style>
+        svg {
+            border: 1px solid black;
+        }
+    </style>
 
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header -->
     <header>
         <div class="main-visual">
             <h1><img src="./img/main-visual.png" alt="main-visual"></h1>
         </div>
 
-        <div class="tp-menu">
-            <h1 id="tp-t1">ぐんと上がる広告をあなたに</h1>
-            <h2 id="tp-t2">もこがいど<h2>
-      <img class="tp-stamp" src="./img/tp-stamp.png" alt="tp-stamp">
-      <h3 id="tp-t3">for corporation</h3>
+      <div class="tp-menu">
+          <h1 id="tp-t1">ぐんと上がる広告をあなたに</h1>
+          <h2 id="tp-t2">もこがいど<h2>
+            <img class="tp-stamp" src="./img/tp-stamp.png" alt="tp-stamp">
+            <h3 id="tp-t3">for corporation</h3>
 
       <!-- share btn -->
       <div class="tp-share-btn">
@@ -72,14 +74,14 @@
       <!-- data -->
         <div class="data">
           <!-- readers -->
-          <div class="readers">
+          <div class="readers content-box">
             <div class="container">
               <h1>2. 読者データ</h1>
               <h2>2-1.読者データ</h2>
 
             <div class="graph">
                 <p class="rd-topic1">◇男女比</p>
-                  <svg id="pie-graph1"></svg>
+                <svg id="pie-graph1"></svg>
 
                 <p class="rd-topic2">◇mocoを読んだ回数</p>
 
@@ -98,10 +100,9 @@
         </div>
 
         <!-- place -->
-        <div class="place">
+        <div class="place content-box">
             <div class="container">
                 <h2>2-2. 配布先情報</h2>
-                <div class="data-box"><p>あああああ</p></div>
 
                 <img src=".img/kyoto-bf.png" alt="kyoto-bf.png" class="kyoto-img">
                 <img src=".img/hyogo-bf.png" alt="hyogo-bf.png" class="hyogo-img">
@@ -110,7 +111,7 @@
                 <img src=".img/tokyo-bf.png" alt="tokyo-bf.png" class="tokyo-img">
 
                 <div class="kyoto">
-                  <h3 class="topic">京都</h3>
+                    <h3 class="topic">京都</h3>
                     <ul>
                         <li>立命館大学(衣笠)</li>
                         <li>同志社大学(今出川・京田辺)</li>
@@ -131,7 +132,7 @@
                 </div>
 
                 <div class="hyogo">
-                  <h3 class="topic">兵庫</h3>
+                    <h3 class="topic">兵庫</h3>
                     <ul>
                         <li>神戸大学</li>
                         <li>関西学院大学</li>
@@ -139,7 +140,7 @@
                 </div>
 
                 <div class="osaka">
-                  <h3 class="topic">大阪</h3>
+                    <h3 class="topic">大阪</h3>
                     <ul>
                         <li>大阪大学</li>
                         <li>関西大学</li>
@@ -150,7 +151,7 @@
                 </div>
 
                 <div class="shiga">
-                  <h3 class="topic">滋賀</h3>
+                    <h3 class="topic">滋賀</h3>
                     <ul>
                         <li>立命館大学(BKC)</li>
                         <li>滋賀大学</li>
@@ -158,7 +159,7 @@
                 </div>
 
                 <div class="tokyo">
-                  <h3 class="topic">東京</h3>
+                    <h3 class="topic">東京</h3>
                     <ul>
                         <li>学習院大学</li>
                         <li>明治大学</li>
@@ -172,14 +173,14 @@
                         <li>賢者屋 新宿店</li>
                     </ul>
                 </div>
-              </div>
             </div>
+        </div>
         </div>
 
         <!-- ad info about-->
         <div class="ad-info">
             <!-- ad info_navigation -->
-            <div class="ad-navi">
+            <div class="ad-navi content-box">
                 <div class="container">
                     <h1>3. mocoの広告</h1>
                     <img src="./img/h1-bl.png" alt="h1-bl" class="h1-bl">
@@ -192,7 +193,7 @@
             </div>
 
             <!-- ad info_chart -->
-            <div class="ad-chart">
+            <div class="ad-chart  content-box">
                 <div class="container">
                     <h2>広告掲載の流れ</h2>
                     <img src="./img/ad-chart.png" alt="ad-chart" class="ad-chart-img">
@@ -202,7 +203,7 @@
         </div>
 
         <!-- contact -->
-        <div class="contact">
+        <div class="contact  content-box">
             <div class="container">
                 <form id="contact">
                     <div class="container">
@@ -258,7 +259,7 @@
                 <p class="footer2">©フリーペーパー制作団体moco 公式サイト all rights reserved</p>
                 <p class="footer3">powered by</p>
                 <a href="http://mocofp.com" class="moco-logo"><img src="./img/moco-logo.png" alt="moco-logo"></a>
-                </div>
+            </div>
             </div>
         </footer>
 
