@@ -246,7 +246,6 @@ p {
     padding-top: 3%;
     padding-left: 7%;
     background-color: #fff;
-    position: relative;
     top: 40px;
     z-index: 2;
 }
@@ -330,6 +329,12 @@ p {
     font-size: 2vw;
     font-weight: 600;
 }
+#pie-graph p {
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    border: 1px dotted gray;
+}
 .rd-topic2 {
     color: #B25262;
     font-family: 小塚ゴシック Pro;
@@ -349,6 +354,57 @@ p {
     background-color: #FF8BA8;
     position: relative;
     z-index: 3;
+}
+.data-box {
+    margin: 5%;
+    margin-top: 3%;
+    padding: 5%;
+    width: 45%;
+    height: 35%;
+    background-color: rgba(91, 151, 178, 0.8);
+    color: #666;
+    position: absolute;
+    right: 15%;
+    }
+.kyoto {
+    font-size: 1.5vw;
+    display: none;
+}
+.kyoto ul {
+    margin: 1%;
+    list-style: none;
+}
+.hyogo {
+    font-size: 1.5vw;
+    display: none;
+}
+.hyogo ul {
+    margin: 1%;
+    list-style: none;
+}
+.osaka {
+    font-size: 1.5vw;
+    display: none;
+}
+.osaka ul {
+    margin: 1%;
+    list-style: none;
+}
+.shiga {
+    font-size: 1.5vw;
+    display: none;
+}
+.shiga ul {
+    margin: 1%;
+    list-style: none;
+}
+.tokyo {
+    font-size: 1.5vw;
+    display: none;
+}
+.tokyo ul {
+    margin: 1%;
+    list-style: none;
 }
 
 /* ad-info */
@@ -405,8 +461,8 @@ input:first-of-type {
 }
 input, textarea {
     font-size: 1em;
-    padding: 15px 10px 10px;
     font-family: 'Source Sans Pro', arial, sans-serif;
+    padding: 15px 10px 10px;
     border: 1px solid #cecece;
     background: #B0B0B0;
     color: #FAFAFA;
