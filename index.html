@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>関西学生フリーペーパー moco ガイド</title>
     <link rel="stylesheet" href="style.css">
-    <script src="js/jquery-3.0.0.min.js" charset="utf-8"></script>
-    <script src="moco.js" charset="utf-8"></script>
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <style>
         svg {
             border: 1px solid black;
         }
     </style>
 
-  </head>
+</head>
 
-  <body>
+<body>
+    <script src="./js/jquery-3.0.0.min.js" charset="utf-8"></script>
+    <script src="./js/d3.min.js" charset="utf-8"></script>
+    <script src="./js/moco.js" charset="utf-8"></script>
     <!-- header -->
     <header>
         <div class="main-visual">
             <h1><img src="./img/main-visual.png" alt="main-visual"></h1>
         </div>
 
-      <div class="tp-menu">
-          <h1 id="tp-t1">ぐんと上がる広告をあなたに</h1>
-          <h2 id="tp-t2">もこがいど<h2>
+        <div class="tp-menu">
+            <h1 id="tp-t1">ぐんと上がる広告をあなたに</h1>
+            <h2 id="tp-t2">もこがいど<h2>
             <img class="tp-stamp" src="./img/tp-stamp.png" alt="tp-stamp">
             <h3 id="tp-t3">for corporation</h3>
 
@@ -62,9 +62,11 @@
       <div class="about">
         <nav class="container">
           <h1>1. mocoとは？</h1>
-          <img src="./img/h1-bl.png" alt="h1-bl" class="h1-bl">
+          <img src="./img/h1-bl.png" alt="h1-bl" class="h-1-bl">
+          <div class="about-main">
           <img src="./img/moco-visual.png" alt="moco-visual" class="moco-visual">
           <p class="about1">大学生の<br>大学生による<br>大学生のための<br>フリーペーパー</p>
+          </div>
           <p class="about2">発行部数関西Ｎｏ.１</p>
           <p class="about3">京都を拠点に学生のみで制作中！</p>
           <p class="about4">創刊8年目 / A4オールカラー約40ページ / 季刊</p>
@@ -104,11 +106,15 @@
             <div class="container">
                 <h2>2-2. 配布先情報</h2>
 
-                <img src=".img/kyoto-bf.png" alt="kyoto-bf.png" class="kyoto-img">
-                <img src=".img/hyogo-bf.png" alt="hyogo-bf.png" class="hyogo-img">
-                <img src=".img/osaka-bf.png" alt="osaka-bf.png" class="osaka-img">
-                <img src=".img/shiga-bf.png" alt="shiga-bf.png" class="shiga-img">
-                <img src=".img/tokyo-bf.png" alt="tokyo-bf.png" class="tokyo-img">
+                <div class="data-box"></div>
+
+                <img src="./img/kyoto-bf.png" alt="kyoto-bf.png" class="kyoto-img">
+                <div class="flex-img">
+                    <img src="./img/hyogo-bf.png" alt="hyogo-bf.png" class="hyogo-img">
+                    <img src="./img/osaka-bf.png" alt="osaka-bf.png" class="osaka-img">
+                    <img src="./img/shiga-bf.png" alt="shiga-bf.png" class="shiga-img">
+                    <img src="./img/tokyo-bf.png" alt="tokyo-bf.png" class="tokyo-img">
+                </div>
 
                 <div class="kyoto">
                     <h3 class="topic">京都</h3>
@@ -183,12 +189,12 @@
             <div class="ad-navi content-box">
                 <div class="container">
                     <h1>3. mocoの広告</h1>
-                    <img src="./img/h1-bl.png" alt="h1-bl" class="h1-bl">
-                    <img src="./img/ad-navi.png" alt="ad-navi">
-                    <h3 class="ad-info1">詳細については</h3>
-                    <h3 class="contact-btn"><a href="contact">お問い合わせフォーム</a></h3>
-                    <h3 class="ad-info1">まで</h3>
-                    <h4 class="ad-info2">挟み込み広告・懸賞記事等についてもお気軽にご相談ください。</h4>
+                      <img src="./img/h1-bl.png" alt="h1-bl" class="h-1-bl">
+                      <img src="./img/ad-navi.png" alt="ad-navi" class="ad-navi-img">
+                      <h3 class="ad-navi1">詳細については</h3>
+                      <h3 class="contact-btn"><a href="contact">お問い合わせフォーム</a></h3>
+                      <h3 class="ad-navi2">まで</h3>
+                      <p class="ad-navi3">挟み込み広告・懸賞記事等についてもお気軽にご相談ください。</p>
                 </div>
             </div>
 
@@ -210,12 +216,9 @@
                         <div class="head">
                             <h1>4. お問い合わせ</h1>
                         </div>
-                        <input type="text" name="name" placeholder="Name" />
-                        <br />
-                        <input type="email" name="email" placeholder="Email" />
-                        <br />
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
                         <textarea type="text" name="message" placeholder="Message"></textarea>
-                        <br />
                         <div class="message">送信</div>
                         <button id="submit" type="submit">
                             <i class="icon-plane"></i>
@@ -228,9 +231,9 @@
         </main>
 
         <footer>
-            <div class="footer">
+            <div class="ft-left">
                 <!-- share btn -->
-                <div class="share-btn-bt">
+                <div class="ft-share-btn">
                     <ul>
                         <li>
                             <div class="tw-btn">
@@ -257,8 +260,11 @@
                     <br>　　　　奥村敬子
                     <br>　　　　moco.okumura@gmail.com</p>
                 <p class="footer2">©フリーペーパー制作団体moco 公式サイト all rights reserved</p>
+            </div>
+
+            <div class="ft-right">
                 <p class="footer3">powered by</p>
-                <a href="http://mocofp.com" class="moco-logo"><img src="./img/moco-logo.png" alt="moco-logo"></a>
+                <a href="http://mocofp.com" class="moco-logo"><img src="./img/moco-logo.png" alt="moco-logo" class="moco-logo"></a>
             </div>
             </div>
         </footer>

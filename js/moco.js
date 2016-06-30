@@ -19,7 +19,7 @@ g.selectAll("path")
 	.attr("stroke", "white")	// 円グラフの区切り線を白色にする
 	.attr("transform", "translate("+svgWidth/2+", "+svgHeight/2+")")	// 円グラフをSVG領域の中心にする
 	.transition()	// トランジション開始
-	.duration(1000)	// 1秒間でアニメーションさせる
+	.duration(2000)	// 2秒間でアニメーションさせる
 	.attrTween("d", function(d){	// 指定した範囲で値を変化させアニメーションさせる
 		var interpolate = d3.interpolate(
 			{ startAngle : 0, endAngle : 0 },	// 各円グラフの開始角度
