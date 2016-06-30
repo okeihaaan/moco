@@ -1,73 +1,255 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <title>関西学生フリーペーパー moco ガイド</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>関西学生フリーペーパー moco ガイド</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="moco.js"></script>
 </head>
 
 <body>
-  <!-- header -->
-  <header>
-    <div class="main-visual">
-      <h1>
-        <img src="./img/main-visual.png" alt="main-visual">
-      </h1>
-    </div>
+    <!-- header -->
+    <header>
+        <div class="main-visual">
+            <h1><img src="./img/main-visual.png" alt="main-visual"></h1>
+        </div>
 
-    <div class="top-menu">
-      <h1>ぐんと上がる広告をあなたに</h1>
-      <h2>もこがいど<h2>
-      <h3>for corporation</h3>
+        <div class="tp-menu">
+            <h1 id="tp-t1">ぐんと上がる広告をあなたに</h1>
+            <h2 id="tp-t2">もこがいど<h2>
+      <img class="tp-stamp" src="./img/tp-stamp.png" alt="tp-stamp">
+      <h3 id="tp-t3">for corporation</h3>
 
-      <!-- share button -->
-      <ul>
-        <li><div class="tw-button"><img src="./img/tw-button.png" alt="">
-        </div></li>
-        <li><div class="fb-button"><<img src="./img/fb-button.png" alt="">
-        </div></li>
-        <li><div class="mail-button"><img src="./img/mail-button.png" alt="">
-        </div></li>
+      <!-- share btn -->
+      <div class="tp-share-btn">
+        <ul>
+          <li><div class="tw-btn"><a href="http://twitter.com/share?text=「もこガイド」関西学生フリーペーパーmocoの広告情報をチェック！&url=http://mocofp.com/&hashtags=フリーペーパーmoco&via=moco_FreePaper" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow"><img src="./img/tw-btn.png" alt="tw-btn"></a></div></li>
+
+          <li><div class="fb-btn">
+            <a href="https://www.facebook.com/dialog/feed?app_id=419866574778905&link=http://mocofp.com/&&name=もこがいど&caption=関西No.1学生フリーペーパーmocoの広告情報&description=広告概要をチェックしよう！&redirect_uri=http://mocofp.com/&display=page" title="fb-btn"><img src="./img/fb-btn.png" alt="fb-btn"></a></div></li>
+
+          <li><div class="mail-btn"><a><img src="./img/mail-btn.png" alt="mail-btn">
+          </a></div></li>
+        </ul>
+      </div>
 
       <!-- credit -->
-      <p>text: Keiko Okumura design:Keiko Okumura photo:Kenta Ichiki</p>
+      <p class="tp-credit">text: Keiko Okumura design:Keiko Okumura photo:Kenta Ichiki</p>
     </div>
-
   </header>
+
     <!-- main -->
     <main>
-    <div class="container">
-      <!-- about-->
-        <div class="about">
-        </div>
-      <!-- data -->
-        <div class="data">
-          <!-- readers -->
-            <div class="readers">
-            </div>
-          <!-- place -->
-            <div class="place">
-            </div>
-        </div>
-      <!-- ad info about-->
-      <div class="ad-about">
-          <!-- ad info_navigation -->
-            <div class="ad-navi">
-            </div>
-          <!-- ad info_chart -->
-            <div class="ad-chart">
-            </div>
+      <div class="fixed-menu">
+        <ul>
+          <li><a href="about">about</a></li>
+          <li><a href="data">data</a></li>
+          <li><a href="ad-info">ad info</a></li>
+          <li><a href="contact">contact</a></li>
+        </ul>
       </div>
-      <!-- contact -->
-        <div class="contact">
-        </div>
-      </div>
-    </main>
 
-    <footer>
-      <div class="footer">
-      </div>
-    </footer>
+      <!-- about-->
+      <nav class="about">
+        <div class="container">
+          <h1>1. mocoとは？</h1>
+          <img src="./img/h1-bl.png" alt="h1-bl" class="h1-bl">
+          <img src="./img/moco-visual.png" alt="moco-visual" class="moco-visual">
+          <p class="about1">大学生の<br>大学生による<br>大学生のための<br>フリーペーパー</p>
+          <p class="about2">発行部数関西Ｎｏ.１</p>
+          <p class="about3">京都を拠点に学生のみで制作中！</p>
+          <p class="about4">創刊8年目 / A4オールカラー約40ページ / 季刊</p>
+        </div>
+      </nav>
+
+      <!-- data -->
+        <nav class="data">
+          <!-- readers -->
+          <nav class="readers">
+            <div class="container">
+              <h1>2. 読者データ</h1>
+              <h2>2-1.読者データ</h2>
+
+            <div class="graph">
+                <p class="rd-topic1">◇男女比</p>
+                <p class="rd-topic2">◇mocoを読んだ回数</p>
+                <p class="rd-topic3">◇学年比 (%)</p>
+            </div>
+
+            <h3 class="rd-ex1">キャンパス滞在時間の長い</h3>
+            <h3 class="rd-ex2">1,2回生女子</h3>
+            <h3 class="rd-ex3">を中心に</h3>
+            <h3 class="rd-ex2">リピーター</h3>
+            <h3 class="rd-ex3">も</h3>
+            <h3 class="rd-ex2">多数。</h3>
+            <h3 class="rd-ex4">男性読者も確実に存在。</h3>
+        </div>
+        </nav>
+
+        <!-- place -->
+        <nav class="place">
+            <div class="container">
+                <h2>2-2. 配布先情報</h2>
+                <img src=".img/kyoto-bf.png" alt="kyoto-bf.png">
+                <img src=".img/kyoto-af.png" alt="kyoto-af.png">
+                <img src=".img/hyogo-bf.png" alt="hyogo-bf.png">
+                <img src=".img/hyogo-af.png" alt="hyogo-af.png">
+                <img src=".img/osaka-bf.png" alt="osaka-bf.png">
+                <img src=".img/osaka-af.png" alt="osaka-af.png">
+                <img src=".img/shiga-bf.png" alt="shiga-bf.png">
+                <img src=".img/shiga-af.png" alt="shiga-af.png">
+                <img src=".img/tokyo-bf.png" alt="tokyo-bf.png">
+                <img src=".img/tokyo-af.png" alt="tokyo-af.png">
+
+                <div class="kyoto">
+                    <ul>
+                        <li>立命館大学(衣笠)</li>
+                        <li>同志社大学(今出川・京田辺)</li>
+                        <li>同志社女子大学(今出川・京田辺)</li>
+                        <li>京都大学(百万遍)</li>
+                        <li>京都女子大学</li>
+                        <li>佛教大学</li>
+                        <li>京都造形芸術大学</li>
+                        <li>京都市立芸術大学</li>
+                        <li>京都精華大学</li>
+                        <li>嵯峨芸術大学</li>
+                        <li>京都工芸繊維大学</li>
+                        <li>京都府立大学</li>
+                        <li>ノートルダム女子大学</li>
+                        <li>平安女学院大学</li>
+                        <li>サークルK 対象店舗</li>
+                    </ul>
+                </div>
+
+                <div class="hyogo">
+                    <ul>
+                        <li>神戸大学</li>
+                        <li>関西学院大学</li>
+                    </ul>
+                </div>
+
+                <div class="osaka">
+                    <ul>
+                        <li>大阪大学</li>
+                        <li>関西大学</li>
+                        <li>立命館大学(OIC)</li>
+                        <li>近畿大学</li>
+                        <li>賢者屋 大阪梅田店</li>
+                    </ul>
+                </div>
+
+                <div class="shiga"></div>
+                <ul>
+                    <li>立命館大学(BKC)</li>
+                    <li>滋賀大学</li>
+                </ul>
+
+                <div class="tokyo">
+                    <ul>
+                        <li>学習院大学</li>
+                        <li>明治大学</li>
+                        <li>青山学院大学</li>
+                        <li>立教大学</li>
+                        <li>中央大学</li>
+                        <li>法政大学</li>
+                        <li>早稲田大学</li>
+                        <li>慶応義塾大学</li>
+                        <li>上智大学</li>
+                        <li>賢者屋 新宿店</li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- ad info about-->
+        <nav class="ad-info">
+            <!-- ad info_navigation -->
+            <nav class="ad-navi">
+                <div class="container">
+                    <h1>3. mocoの広告</h1>
+                    <img src="./img/h1-bl.png" alt="h1-bl" class="h1-bl">
+                    <img src="./img/ad-navi.png" alt="ad-navi">
+                    <h3 class="ad-info1">詳細については</h3>
+                    <h3 class="contact-btn"><a href="contact">お問い合わせフォーム</a></h3>
+                    <h3 class="ad-info1">まで</h3>
+                    <h4 class="ad-info2">挟み込み広告・懸賞記事等についてもお気軽にご相談ください。</h4>
+                </div>
+            </nav>
+
+            <!-- ad info_chart -->
+            <nav class="ad-chart">
+                <div class="container">
+                    <h2>広告掲載の流れ</h2>
+                    <img src="./img/ad-chart.png" alt="ad-chart" class="ad-chart-img">
+                </div>
+            </nav>
+
+        </nav>
+
+        <!-- contact -->
+        <nav class="contact">
+            <div class="container">
+                <form id="contact">
+                    <div class="container">
+                        <div class="head">
+                            <h1>4. お問い合わせ</h1>
+                        </div>
+                        <input type="text" name="name" placeholder="Name" />
+                        <br />
+                        <input type="email" name="email" placeholder="Email" />
+                        <br />
+                        <textarea type="text" name="message" placeholder="Message"></textarea>
+                        <br />
+                        <div class="message">送信</div>
+                        <button id="submit" type="submit">
+                            <i class="icon-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        </div>
+        </main>
+
+        <footer>
+            <nav class="footer">
+                <!-- share btn -->
+                <div class="share-btn-bt">
+                    <ul>
+                        <li>
+                            <div class="tw-btn">
+                                <a href="http://twitter.com/share?text=「もこガイド」関西学生フリーペーパーmocoの広告情報をチェック！&url=http://mocofp.com/&hashtags=フリーペーパーmoco&via=moco_FreePaper" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;"
+                                    rel="nofollow"><img src="./img/tw-btn.png" alt="tw-btn"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="fb-btn">
+                                <a><img src="./img/fb-btn.png" alt="fb-btn">
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="mail-btn">
+                                <a><img src="./img/mail-btn.png" alt="mail-btn">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="footer1">文責：フリーペーパー制作団体moco 8代目 副代表・営業部
+                    <br>　　　　奥村敬子
+                    <br>　　　　moco.okumura@gmail.com</p>
+                <p class="footer2">©フリーペーパー制作団体moco 公式サイト all rights reserved</p>
+                <p class="footer3">powered by</p>
+                <a href="http://mocofp.com" class="moco-logo"><img src="./img/moco-logo.png" alt="moco-logo"></a>
+                </div>
+            </nav>
+        </footer>
 
 </body>
+
 </html>
