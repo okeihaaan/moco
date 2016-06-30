@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <title>関西学生フリーペーパー moco ガイド</title>
     <link rel="stylesheet" href="style.css">
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="moco.js"></script>
+    <script src="js/jquery-3.0.0.min.js" charset="utf-8"></script>
+    <script src="moco.js" charset="utf-8"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <style>
+			svg { border: 1px solid black; }
+		</style>
+
 </head>
 
 <body>
@@ -52,8 +57,8 @@
       </div>
 
       <!-- about-->
-      <nav class="about">
-        <div class="container">
+      <div class="about">
+        <nav class="container">
           <h1>1. mocoとは？</h1>
           <img src="./img/h1-bl.png" alt="h1-bl" class="h1-bl">
           <img src="./img/moco-visual.png" alt="moco-visual" class="moco-visual">
@@ -61,20 +66,24 @@
           <p class="about2">発行部数関西Ｎｏ.１</p>
           <p class="about3">京都を拠点に学生のみで制作中！</p>
           <p class="about4">創刊8年目 / A4オールカラー約40ページ / 季刊</p>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
       <!-- data -->
-        <nav class="data">
+        <div class="data">
           <!-- readers -->
-          <nav class="readers">
+          <div class="readers">
             <div class="container">
               <h1>2. 読者データ</h1>
               <h2>2-1.読者データ</h2>
 
             <div class="graph">
                 <p class="rd-topic1">◇男女比</p>
+                  <svg id="pie-graph1"></svg>
+
                 <p class="rd-topic2">◇mocoを読んだ回数</p>
+
+
                 <p class="rd-topic3">◇学年比 (%)</p>
             </div>
 
@@ -86,24 +95,22 @@
             <h3 class="rd-ex2">多数。</h3>
             <h3 class="rd-ex4">男性読者も確実に存在。</h3>
         </div>
-        </nav>
+        </div>
 
         <!-- place -->
-        <nav class="place">
+        <div class="place">
             <div class="container">
                 <h2>2-2. 配布先情報</h2>
-                <img src=".img/kyoto-bf.png" alt="kyoto-bf.png">
-                <img src=".img/kyoto-af.png" alt="kyoto-af.png">
-                <img src=".img/hyogo-bf.png" alt="hyogo-bf.png">
-                <img src=".img/hyogo-af.png" alt="hyogo-af.png">
-                <img src=".img/osaka-bf.png" alt="osaka-bf.png">
-                <img src=".img/osaka-af.png" alt="osaka-af.png">
-                <img src=".img/shiga-bf.png" alt="shiga-bf.png">
-                <img src=".img/shiga-af.png" alt="shiga-af.png">
-                <img src=".img/tokyo-bf.png" alt="tokyo-bf.png">
-                <img src=".img/tokyo-af.png" alt="tokyo-af.png">
+                <div class="data-box"><p>あああああ</p></div>
+
+                <img src=".img/kyoto-bf.png" alt="kyoto-bf.png" class="kyoto-img">
+                <img src=".img/hyogo-bf.png" alt="hyogo-bf.png" class="hyogo-img">
+                <img src=".img/osaka-bf.png" alt="osaka-bf.png" class="osaka-img">
+                <img src=".img/shiga-bf.png" alt="shiga-bf.png" class="shiga-img">
+                <img src=".img/tokyo-bf.png" alt="tokyo-bf.png" class="tokyo-img">
 
                 <div class="kyoto">
+                  <h3 class="topic">京都</h3>
                     <ul>
                         <li>立命館大学(衣笠)</li>
                         <li>同志社大学(今出川・京田辺)</li>
@@ -124,6 +131,7 @@
                 </div>
 
                 <div class="hyogo">
+                  <h3 class="topic">兵庫</h3>
                     <ul>
                         <li>神戸大学</li>
                         <li>関西学院大学</li>
@@ -131,6 +139,7 @@
                 </div>
 
                 <div class="osaka">
+                  <h3 class="topic">大阪</h3>
                     <ul>
                         <li>大阪大学</li>
                         <li>関西大学</li>
@@ -140,13 +149,16 @@
                     </ul>
                 </div>
 
-                <div class="shiga"></div>
-                <ul>
-                    <li>立命館大学(BKC)</li>
-                    <li>滋賀大学</li>
-                </ul>
+                <div class="shiga">
+                  <h3 class="topic">滋賀</h3>
+                    <ul>
+                        <li>立命館大学(BKC)</li>
+                        <li>滋賀大学</li>
+                    </ul>
+                </div>
 
                 <div class="tokyo">
+                  <h3 class="topic">東京</h3>
                     <ul>
                         <li>学習院大学</li>
                         <li>明治大学</li>
@@ -160,14 +172,14 @@
                         <li>賢者屋 新宿店</li>
                     </ul>
                 </div>
-
+              </div>
             </div>
-        </nav>
+        </div>
 
         <!-- ad info about-->
-        <nav class="ad-info">
+        <div class="ad-info">
             <!-- ad info_navigation -->
-            <nav class="ad-navi">
+            <div class="ad-navi">
                 <div class="container">
                     <h1>3. mocoの広告</h1>
                     <img src="./img/h1-bl.png" alt="h1-bl" class="h1-bl">
@@ -177,20 +189,20 @@
                     <h3 class="ad-info1">まで</h3>
                     <h4 class="ad-info2">挟み込み広告・懸賞記事等についてもお気軽にご相談ください。</h4>
                 </div>
-            </nav>
+            </div>
 
             <!-- ad info_chart -->
-            <nav class="ad-chart">
+            <div class="ad-chart">
                 <div class="container">
                     <h2>広告掲載の流れ</h2>
                     <img src="./img/ad-chart.png" alt="ad-chart" class="ad-chart-img">
                 </div>
-            </nav>
+            </div>
 
-        </nav>
+        </div>
 
         <!-- contact -->
-        <nav class="contact">
+        <div class="contact">
             <div class="container">
                 <form id="contact">
                     <div class="container">
@@ -210,12 +222,12 @@
                     </div>
                 </form>
             </div>
-        </nav>
+        </div>
         </div>
         </main>
 
         <footer>
-            <nav class="footer">
+            <div class="footer">
                 <!-- share btn -->
                 <div class="share-btn-bt">
                     <ul>
@@ -247,7 +259,7 @@
                 <p class="footer3">powered by</p>
                 <a href="http://mocofp.com" class="moco-logo"><img src="./img/moco-logo.png" alt="moco-logo"></a>
                 </div>
-            </nav>
+            </div>
         </footer>
 
 </body>
