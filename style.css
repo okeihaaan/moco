@@ -134,10 +134,20 @@ h2 {
     font-size: 2.5vw;
     font-weight: 800;
     letter-spacing: 0.15em;
+    position: absolute;
+    left: 6%;
+    margin: 1%;
 }
 h3 {
     font-family: 小塚ゴシック Pro;
     font-size: 2vw;
+}
+h4 {
+    color: #5B98B2;
+    font-family: 小塚ゴシック Pro;
+    font-size: 2.5vw;
+    font-weight: 800;
+    letter-spacing: 0.15em;
 }
 p {
     color: #666;
@@ -175,14 +185,14 @@ p {
     left: 2%;
     z-index: 6;
 }
-#tp-t1 {
+.tp-t1 {
     padding-left: 5px;
     font-family: 小塚ゴシック Pro;
     font-style: bold;
     font-size: 17px;
     letter-spacing: 0.3em;
 }
-#tp-t2 {
+.tp-t2 {
     font-family: 小塚ゴシック Pro;
     font-weight: 800;
     font-size: 50px;
@@ -195,7 +205,7 @@ p {
     top: 8%;
     left: 72%;
 }
-#tp-t3 {
+.tp-t3 {
     color: #5B98B2;
     font-family: 小塚ゴシック Pro;
     font-style: oblique;
@@ -239,6 +249,23 @@ p {
 .content-box {
     overflow: hidden;
 }
+.h1-udl {
+    margin-left: -10%;
+    margin-top: -2.5%;
+    margin-bottom: 0;
+    width: 50vw;
+    height: 3vw;
+    max-width: 480px;
+    min-width: 180px;
+}
+.h2-udl {
+    margin-left: -10%;
+    margin-bottom: 2%;
+    width: 50vw;
+    height: 3vw;
+    max-width: 360px;
+    min-width: 120px;
+}
 
 /* fixed-menu */
 
@@ -278,22 +305,12 @@ p {
     overflow: hidden;
     z-index: 1;
 }
-.h-1-bl {
-    margin-left: -10%;
-    margin-top: -2.2%;
-    margin-bottom: 2%;
-    float: left;
-    width: 90%;
-    height: 28%;
-    max-width: 480px;
-    min-width: 180px;
-}
 .about-main {
     display: flex;
-    position: flex;
     width: 100%;
 }
 .moco-visual {
+    margin-top: 3%;
     margin-left: 2%;
     width: 35%;
     height: 85%;
@@ -304,7 +321,7 @@ p {
     font-weight: 900;
     letter-spacing: 0.4em;
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 .about2 {
     margin-top: 2.5%;
@@ -335,21 +352,29 @@ p {
 .readers {
     background-color: #5eabcb;
     position: relative;
-    ;
+    overflow: hidden;
     z-index: 3;
 }
-.graph {}
+.rd-h1-udl {
+    margin-top: -2.5%;
+}
+.readers h2 {
+    position: absolute;
+    top: 25%;
+}
+.rd-h2-udl {
+    margin-top: -2.5%;
+}
+.rd-tp-1_2 {
+    display: flex;
+    position: absolute;
+    top: 40%;
+}
 .rd-topic1 {
     color: #B25262;
     font-family: 小塚ゴシック Pro;
     font-size: 1.8vw;
     font-weight: 700;
-}
-#pie-graph p {
-    margin: 0;
-    padding: 0;
-    width: 320px;
-    border: 1px dotted gray;
 }
 .rd-topic2 {
     color: #B25262;
@@ -357,11 +382,67 @@ p {
     font-size: 1.8vw;
     font-weight: 700;
 }
+.rd-gr-1_2 {
+    display: flex;
+    position: absolute;
+    top: 60%;
+}
+.pie-graph1 p {
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    border: none;
+}
+.pie-graph2 p {
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    border: none;
+}
+.data-ud {
+    float: left;
+    position: absolute;
+    top: 80%;
+}
 .rd-topic3 {
     color: #B25262;
     font-family: 小塚ゴシック Pro;
     font-size: 1.8vw;
     font-weight: 700;
+}
+.rd-exp {
+    padding: 3%;
+    float: right;
+    font-family: 小塚ゴシック pro;
+    color: #B25262;
+}
+.t1 {
+    letter-spacing: 0.1em;
+    position: relative;
+    top: 3.2vw;
+}
+.t2 {
+    font-size: 2.8vw;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    position: relative;
+    top: 3.2vw;
+}
+.t3 {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    position: relative;
+    left: 62%;
+}
+.t4 {
+    font-size: 3vw;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+.t5 {
+    font-size: 2.5vw;
+    font-weight: 300;
+    letter-spacing: 0.03em;
 }
 
 /*data-place */
@@ -369,6 +450,7 @@ p {
 .place {
     background-color: #FF8BA8;
     position: relative;
+    overflow: hidden;
     z-index: 3;
 }
 .place img {
@@ -377,30 +459,108 @@ p {
     margin-left: 2.7%;
     margin-top: 8%;
 }
-.kyoto-img {
-    margin-top: 7%;
-}
-.flex-img img {
-    margin-top: 10%;
-    margin-bottom: 5%;
-    position: flex;
-}
 .data-box {
     margin: 5%;
     margin-top: 2%;
     padding: 5%;
-    width: 50%;
+    width: 45%;
     height: 40%;
+    min-width: 225px;
+    min-height: 200px;
     background-color: rgba(91, 151, 178, 0.8);
     color: #666;
     position: absolute;
+    top: 23%;
     right: 15%;
+}
+.kyoto-img {
+    background: url("./img/kyoto-af.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.kyoto-img {
+    position: absolute;
+    top: 20%;
+}
+.kyoto-img a {
+    display: inline-block;
+}
+.kyoto-img a:hover {
+    background-color: transparent;
+}
+.kyoto-img a:hover img {
+    visibility: hidden;
+}
+.flex-img {
+    margin-top: 5%;
+    position: absolute;
+    top: 40%;
+}
+.flex-img img {
+    margin-top: 23%;
+    margin-bottom: 5%;
+    display: : flex;
+}
+.hyogo-img {
+    background: url("./img/hyogo-af.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.hyogo-img a {
+    display: inline-block;
+}
+.hyogo-img a:hover {
+    background-color: transparent;
+}
+.hyogo-img a:hover img {
+    visibility: hidden;
+}
+.osaka-img {
+    background: url("./img/osaka-af.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.osaka-img a {
+    display: inline-block;
+}
+.osaka-img a:hover {
+    background-color: transparent;
+}
+.osaka-img a:hover img {
+    visibility: hidden;
+}
+.shiga-img {
+    background: url("./img/shiga-af.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.shiga-img a {
+    display: inline-block;
+}
+.shiga-img a:hover {
+    background-color: transparent;
+}
+.shiga-img a:hover img {
+    visibility: hidden;
+}
+.tokyo-img {
+    background: url("./img/tokyo-af.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.tokyo-img a {
+    display: inline-block;
+}
+.tokyo-img a:hover {
+    background-color: transparent;
+}
+.tokyo-img a:hover img {
+    visibility: hidden;
 }
 .kyoto {
     font-size: 1.5vw;
     display: none;
 }
-.kyoto-img:hover {}
 .kyoto ul {
     margin: 1%;
     list-style: none;
@@ -446,10 +606,16 @@ p {
 .ad-navi {
     background-color: #FFDF48;
     position: relative;
+    overflow: hidden;
     z-index: 3;
 }
+.adnv-udl {
+    margin-bottom: 5%;
+    position: absolute;
+    top: 25%;
+}
 .ad-navi-img {
-    margin-top: 2%;
+    margin-top: 8%;
     width: 90%;
 }
 .ad-navi a {
@@ -490,9 +656,12 @@ p {
 
 .ad-chart {
     background-color: #5eabcb;
+    overflow: hidden;
     z-index: 3;
 }
-.ad-chart img {
+.adc-udl {
+}
+.ad-chart-img {
     margin: 3%;
     margin-left: 12%;
     margin-bottom: 5%;
@@ -504,6 +673,7 @@ p {
 .contact {
     background-color: #FF8BA8;
     position: relative;
+    overflow: hidden;
     z-index: 3;
     ;
 }
