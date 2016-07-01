@@ -659,8 +659,7 @@ p {
     overflow: hidden;
     z-index: 3;
 }
-.adc-udl {
-}
+.adc-udl {}
 .ad-chart-img {
     margin: 3%;
     margin-left: 12%;
@@ -677,11 +676,20 @@ p {
     z-index: 3;
     ;
 }
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7%;
+    padding-bottom: 3%;
+    padding-top: 1%;
+}
 input {
     margin-bottom: 10px;
 }
 textarea {
-    height: 100px;
+    height: 240px;
     margin-bottom: 10px;
 }
 input:first-of-type {
@@ -689,11 +697,11 @@ input:first-of-type {
 }
 input, textarea {
     font-size: 1em;
-    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-family: 小塚ゴシック pro;
     padding: 15px 10px 10px;
     border: 1px solid #cecece;
-    background: #B0B0B0;
-    color: #FAFAFA;
+    background: #666;
+    color: #fff;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -703,48 +711,51 @@ input, textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 80%;
+    width: 90%;
     max-width: 600px;
 }
 ::-webkit-input-placeholder {
-    color: #FAFAFA;
+    color: #fff;
 }
 :-moz-placeholder {
-    color: #FAFAFA;
+    color: #fff;
 }
 ::-moz-placeholder {
-    color: #FAFAFA;
+    color: #fff;
 }
 :-ms-input-placeholder {
-    color: #FAFAFA;
+    color: #fff;
 }
 button {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 25px;
     background-color: #2ABCA7;
     padding: 5px 45px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    border: 1px solid #2ABCA7;
+    border: 0;
     -webkit-transition: .5s;
     transition: .5s;
     display: inline-block;
     cursor: pointer;
-    width: 30%;
+    width: 40%;
 }
 button:hover, .button:hover {
-    background: #19a08c;
+    background: #FFDF48;
 }
 .icon-plane {
-    display: block;
     width: 32px;
     height: 32px;
     margin: auto;
-    background: url('http://www.timquincey.me/img/paperplane.svg');
+    font-family: 小塚ゴシック pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    letter-spacing: 0.15em;
 }
 label.error {
-    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-family: 小塚ゴシック pro;
     font-size: 1em;
     display: block;
     padding-top: 10px;
@@ -752,7 +763,7 @@ label.error {
     background-color: #d89c9c;
     width: 80%;
     margin: auto;
-    color: #FAFAFA;
+    color: #fff;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -775,7 +786,8 @@ label.error {
     }
 }
 .message {
-    font-family: 'Source Sans Pro', arial, sans-serif;
+    font-family: 小塚ゴシック pro;
+    font-weight: 500;
     font-size: 1.1em;
     display: none;
     padding-top: 10px;
@@ -783,7 +795,7 @@ label.error {
     background-color: #2ABCA7;
     width: 80%;
     margin: auto;
-    color: #FAFAFA;
+    color: #B25262;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
