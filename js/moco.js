@@ -1,8 +1,8 @@
-var list = [58,42];
+vvar list = [58,42];
 var svgWidth = 320;	// SVG領域の横幅
 var svgHeight = 240;	// SVG領域の縦幅
 // SVGの表示領域を生成
-var svg = d3.select(".pie-graph").append("svg")
+var svg = d3.select(".pie-graph1").append("svg")
 	.attr("width", svgWidth).attr("height", svgHeight)
 // 円グラフを生成
 var pie = d3.layout.pie()
@@ -27,10 +27,10 @@ g.selectAll("path")
 		);
 		return function(t){
 			return arc(interpolate(t));	// 時間に応じて処理
-		}
-	})
-
-
+		};
+	});
+​
+​
 	var list = [52, 23, 10, 15];
 	var svgWidth = 320;	// SVG領域の横幅
 	var svgHeight = 240;	// SVG領域の縦幅
@@ -62,13 +62,13 @@ g.selectAll("path")
 				return arc(interpolate(t));	// 時間に応じて処理
 			}
 		})
-
+​
 		var list = [33, 33, 22, 10, 2];
 var svgWidth = 320;	// SVG領域の横幅
 var svgHeight = 240;	// SVG領域の縦幅
 // SVGの表示領域を生成
 var svg = d3.select(".bar-graph").append("svg")
-\// 円グラフを生成
+// 円グラフを生成
 var pie = d3.layout.pie()
 	.value(function(d){ return d; })
 // 円グラフのサイズを指定
@@ -91,4 +91,5 @@ g.selectAll("path")
 		);
 		return function(t){
 			return arc(interpolate(t));	// 時間に応じて処理
-		}
+		};
+  });
