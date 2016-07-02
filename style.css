@@ -367,6 +367,9 @@ p {
 .rd-h2-udl {
     margin-top: -8%;
 }
+.dataimg{
+  width: 80%;
+}
 .rd-contents {
     display: flex;
 }

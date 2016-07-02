@@ -1,4 +1,4 @@
-vvar list = [58,42];
+var list = [58,42];
 var svgWidth = 320;	// SVG領域の横幅
 var svgHeight = 240;	// SVG領域の縦幅
 // SVGの表示領域を生成
@@ -29,7 +29,6 @@ g.selectAll("path")
 			return arc(interpolate(t));	// 時間に応じて処理
 		};
 	});
-​
 ​
 	var list = [52, 23, 10, 15];
 	var svgWidth = 320;	// SVG領域の横幅
