@@ -261,7 +261,7 @@ p {
 .h2-udl {
     margin-left: -10%;
     margin-bottom: 2%;
-    width: 50vw;
+    width: 40vw;
     height: 3vw;
     max-width: 360px;
     min-width: 120px;
@@ -359,33 +359,19 @@ p {
     margin-top: -2.5%;
 }
 .readers h2 {
-    position: absolute;
-    top: 25%;
 }
 .rd-h2-udl {
     margin-top: -2.5%;
 }
-.rd-tp-1_2 {
+.rd-contents {
     display: flex;
-    position: absolute;
-    top: 40%;
 }
+.rd-content1 {}
 .rd-topic1 {
     color: #B25262;
     font-family: 小塚ゴシック Pro;
     font-size: 1.8vw;
     font-weight: 700;
-}
-.rd-topic2 {
-    color: #B25262;
-    font-family: 小塚ゴシック Pro;
-    font-size: 1.8vw;
-    font-weight: 700;
-}
-.rd-gr-1_2 {
-    display: flex;
-    position: absolute;
-    top: 60%;
 }
 .pie-graph1 p {
     margin: 0;
@@ -393,16 +379,21 @@ p {
     width: 320px;
     border: none;
 }
+.rd-content2 {}
+.rd-topic2 {
+    color: #B25262;
+    font-family: 小塚ゴシック Pro;
+    font-size: 1.8vw;
+    font-weight: 700;
+}
 .pie-graph2 p {
     margin: 0;
     padding: 0;
     width: 320px;
     border: none;
 }
-.data-ud {
+.rd-content3 {
     float: left;
-    position: absolute;
-    top: 80%;
 }
 .rd-topic3 {
     color: #B25262;
@@ -410,36 +401,37 @@ p {
     font-size: 1.8vw;
     font-weight: 700;
 }
-.rd-exp {
+
+.rd-content4 {
     padding: 3%;
     float: right;
     font-family: 小塚ゴシック pro;
     color: #B25262;
 }
-.t1 {
+.rd4-t1 {
     letter-spacing: 0.1em;
     position: relative;
     top: 3.2vw;
 }
-.t2 {
+.rd4-t2 {
     font-size: 2.8vw;
     font-weight: 800;
     letter-spacing: 0.1em;
     position: relative;
     top: 3.2vw;
 }
-.t3 {
+.rd4-t3 {
     font-weight: 500;
     letter-spacing: 0.1em;
     position: relative;
     left: 62%;
 }
-.t4 {
+.rd4-t4 {
     font-size: 3vw;
     font-weight: 900;
     letter-spacing: 0.05em;
 }
-.t5 {
+.rd4-t5 {
     font-size: 2.5vw;
     font-weight: 300;
     letter-spacing: 0.03em;
@@ -469,9 +461,6 @@ p {
     min-height: 200px;
     background-color: rgba(91, 151, 178, 0.8);
     color: #666;
-    position: absolute;
-    top: 23%;
-    right: 15%;
 }
 .kyoto-img {
     background: url("./img/kyoto-af.png") no-repeat;
@@ -479,8 +468,7 @@ p {
     background-position: center;
 }
 .kyoto-img {
-    position: absolute;
-    top: 20%;
+
 }
 .kyoto-img a {
     display: inline-block;
@@ -493,8 +481,6 @@ p {
 }
 .flex-img {
     margin-top: 5%;
-    position: absolute;
-    top: 40%;
 }
 .flex-img img {
     margin-top: 23%;

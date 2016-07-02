@@ -1,8 +1,8 @@
 var list = [50, 42];
-var svgWidth = 320;	// SVG領域の横幅
-var svgHeight = 240;	// SVG領域の縦幅
+var svgWidth = 30%;	// SVG領域の横幅
+var svgHeight = 20%;	// SVG領域の縦幅
 // SVGの表示領域を生成
-var svg = d3.select("#pie-graph1").append("svg")
+var svg = d3.select(.pie-graph1").append("svg")
 	.attr("width", svgWidth).attr("height", svgHeight)
 // 円グラフを生成
 var pie = d3.layout.pie()

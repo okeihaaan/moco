@@ -14,9 +14,6 @@
 </head>
 
 <body>
-    <script src="./js/jquery-3.0.0.min.js" charset="utf-8"></script>
-    <script src="./js/d3.min.js" charset="utf-8"></script>
-    <script src="./js/moco.js" charset="utf-8"></script>
     <!-- header -->
     <header>
         <div class="main-visual">
@@ -98,24 +95,29 @@
                     <h2>2-1.読者データ</h2>
                     <img src="./img/udl-bl.png" alt="udl-bl" class="h2-udl rd-h2-udl">
 
-                    <div class="rd-tp-1_2">
-                        <p class="rd-topic1">◇男女比</p>
-                        <p class="rd-topic2">◇mocoを読んだ回数</p>
-                    </div>
-                    <div class="rd-gr-1_2">
-                        <svg class="pie-graph1"></svg>
-                        <svg class="pie-graph2"></svg>
-                    </div>
-                    <div class="data-ud">
-                        <p class="rd-topic3">◇学年比 (%)</p>
-                        <svg class="bar-graph"></svg>
-                    </div>
-                    <div class="rd-exp">
-                        <h3 class="rd-exp1 t1">キャンパス滞在時間の長い</h3>
-                        <h3 class="rd-exp2 t2">1,2回生女子</h3>
-                        <h3 class="rd-exp3 t3">を中心に</h3>
-                        <h3 class="rd-exp2 t4">リピーターも多数。</h3>
-                        <h3 class="rd-exp4 t5">男性読者も確実に存在。</h3>
+                    <div class="rd-contents">
+                        <div class="rd-content1">
+                            <p class="rd-topic1">◇男女比</p>
+                            <svg class="pie-graph1"></svg>
+                        </div>
+
+                        <div class="rd-content2">
+                            <p class="rd-topic2">◇mocoを読んだ回数</p>
+                            <svg class="pie-graph2"></svg>
+                        </div>
+
+                        <div class="rd-content3">
+                            <p class="rd-topic3">◇学年比 (%)</p>
+                            <svg class="bar-graph"></svg>
+                        </div>
+
+                        <div class="rd-content4">
+                            <h3 class="rd4-t1">キャンパス滞在時間の長い</h3>
+                            <h3 class="rd4-t2">1,2回生女子</h3>
+                            <h3 class="rd4-t3">を中心に</h3>
+                            <h3 class="rd4-t4">リピーターも多数。</h3>
+                            <h3 class="rd4-t5">男性読者も確実に存在。</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,10 +233,10 @@
         <!-- contact -->
         <div class="contact  content-box">
             <div class="container">
-                  <div class="topic4">
+                <div class="topic4">
                     <h1>4. お問い合わせ</h1>
                     <img src="./img/udl-ye.png" alt="udl-ye" class="h1-udl">
-                  </div>
+                </div>
 
                 <form class="form">
                     <input type="text" name="name" placeholder="Name">
@@ -288,7 +290,9 @@
         </div>
         </div>
     </footer>
-
+    <script src="./js/jquery-3.0.0.min.js" charset="utf-8"></script>
+    <script src="./js/d3.min.js" charset="utf-8"></script>
+    <script src="./js/moco.js" charset="utf-8"></script>
 </body>
 
 </html>
