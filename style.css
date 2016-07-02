@@ -374,10 +374,10 @@ p {
     font-weight: 700;
 }
 .pie-graph1 p {
-    margin: 0;
-    padding: 0;
-    width: 320px;
-    border: none;
+  margin: 0;
+	padding: 0;
+	width: 320px;
+	border: 1px dotted gray;
 }
 .rd-content2 {}
 .rd-topic2 {
@@ -387,10 +387,10 @@ p {
     font-weight: 700;
 }
 .pie-graph2 p {
-    margin: 0;
-    padding: 0;
-    width: 320px;
-    border: none;
+  margin: 0;
+	padding: 0;
+	width: 320px;
+	border: 1px dotted gray;
 }
 .rd-content3 {
     float: left;
@@ -400,6 +400,12 @@ p {
     font-family: 小塚ゴシック Pro;
     font-size: 1.8vw;
     font-weight: 700;
+}
+.bar-graph p {
+  margin: 0;
+	padding: 0;
+	width: 320px;
+	border: 1px dotted gray;
 }
 
 .rd-content4 {
@@ -451,6 +457,11 @@ p {
     margin-left: 2.7%;
     margin-top: 8%;
 }
+
+.map{
+  display: flex;
+
+}
 .data-box {
     margin: 5%;
     margin-top: 2%;
@@ -461,11 +472,13 @@ p {
     min-height: 200px;
     background-color: rgba(91, 151, 178, 0.8);
     color: #666;
+    float: right;
 }
 .kyoto-img {
     background: url("./img/kyoto-af.png") no-repeat;
     background-size: 100%;
     background-position: center;
+    float: left;
 }
 .kyoto-img {
 
