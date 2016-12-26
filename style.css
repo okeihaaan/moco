@@ -113,24 +113,23 @@ table {
 
 /* common */
 
-* {
+html body {
     margin: 0;
     padding: 0;
 }
 body {
     color: #666;
-    font-family: 小塚ゴシック Pro；
+    font-family: '小塚ゴシック Pro', '游ゴシック体', 'Yu Gosic', 'YuGosic', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', sans-serif;
+    /*display: block;*/
 }
 h1 {
     color: #5B98B2;
-    font-family: 小塚ゴシック Pro;
     font-size: 3.2vw;
     font-weight: 800;
     letter-spacing: 0.1em;
 }
 h2 {
     color: #5B98B2;
-    font-family: 小塚ゴシック Pro;
     font-size: 2.5vw;
     font-weight: 800;
     letter-spacing: 0.15em;
@@ -139,19 +138,16 @@ h2 {
     margin: 1%;
 }
 h3 {
-    font-family: 小塚ゴシック Pro;
     font-size: 2vw;
 }
 h4 {
     color: #5B98B2;
-    font-family: 小塚ゴシック Pro;
     font-size: 2.5vw;
     font-weight: 800;
     letter-spacing: 0.15em;
 }
 p {
     color: #666;
-    font-family: 小塚ゴシック Pro;
     font-size: 1vw;
     font-weight: 300;
 }
@@ -184,16 +180,15 @@ p {
     top: 8%;
     left: 2%;
     z-index: 6;
+    box-shadow: 0 0 15px #666;
 }
 .tp-t1 {
     padding-left: 5px;
-    font-family: 小塚ゴシック Pro;
     font-style: bold;
     font-size: 17px;
     letter-spacing: 0.3em;
 }
 .tp-t2 {
-    font-family: 小塚ゴシック Pro;
     font-weight: 800;
     font-size: 50px;
     letter-spacing: 0.2em;
@@ -207,7 +202,6 @@ p {
 }
 .tp-t3 {
     color: #5B98B2;
-    font-family: 小塚ゴシック Pro;
     font-style: oblique;
     font-weight: 400;
     font-size: 21px;
@@ -234,6 +228,67 @@ p {
     letter-spacing: 0.1em;
     margin-top: 1%;
     margin-left: 2%;
+}
+.scroll {
+    position: absolute;
+    top: 80%;
+    right: 11%;
+    z-index: 6;
+}
+.scroll a {
+    padding-top: 80px;
+}
+.scroll a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3vw;
+    height: 3vw;
+    margin-left: -12px;
+    border-left: 1.8px solid #fff;
+    border-bottom: 1.8px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb 3s infinite;
+    animation: sdb 3s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+}
+.scroll a span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+.scroll a span:nth-of-type(2) {
+    top: 2vw;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+}
+.scroll a span:nth-of-type(3) {
+    top: 4vw;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+@-webkit.scroll -keyframes sdb {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes sdb {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 /* main */
@@ -276,7 +331,6 @@ p {
     top: 10%;
     right: 4%;
     color: #fff;
-    font-family: 小塚ゴシック Pro;
     font-size: 2.2vw;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -289,15 +343,20 @@ p {
     list-style: none;
     text-decoration: none;
     display: block;
-    transition: 0.1s;
+    transition: 0.2s;
 }
+
 .fixed-menu ul li a:visited {
     color: #B25262;
 }
 .fixed-menu ul li a:hover {
     color: #B25262;
+    font-weight: 800;
+    transition: 1.5s;
 }
-
+.fixed-menu ul li a:active {
+    color: #fff;
+}
 /* about */
 
 .about {
@@ -317,7 +376,6 @@ p {
     height: 85%;
 }
 .about1 {
-    font-family: 小塚ゴシック Pro;
     font-size: 3vw;
     font-weight: 900;
     letter-spacing: 0.4em;
@@ -328,20 +386,17 @@ p {
     margin-top: 2.5%;
     margin-left: 6%;
     margin-bottom: 2%;
-    font-family: 小塚ゴシック Pro;
     font-size: 4.8vw;
     font-weight: 700;
     letter-spacing: 0.5em;
 }
 .about3 {
     margin-left: 3.5%;
-    font-family: 小塚ゴシック Pro;
     font-size: 1.6vw;
 }
 .about4 {
     margin-left: 3.5%;
     padding-bottom: 4%;
-    font-family: 小塚ゴシック Pro;
     font-size: 1.6vw;
 }
 
@@ -367,8 +422,8 @@ p {
 .rd-h2-udl {
     margin-top: -8%;
 }
-.dataimg{
-  width: 80%;
+.dataimg {
+    width: 80%;
 }
 .rd-contents {
     display: flex;
@@ -376,7 +431,6 @@ p {
 .rd-content1 {}
 .rd-topic1 {
     color: #B25262;
-    font-family: 小塚ゴシック Pro;
     font-size: 1.8vw;
     font-weight: 700;
 }
@@ -389,7 +443,6 @@ p {
 .rd-content2 {}
 .rd-topic2 {
     color: #B25262;
-    font-family: 小塚ゴシック Pro;
     font-size: 1.8vw;
     font-weight: 700;
 }
@@ -404,7 +457,6 @@ p {
 }
 .rd-topic3 {
     color: #B25262;
-    font-family: 小塚ゴシック Pro;
     font-size: 1.8vw;
     font-weight: 700;
 }
@@ -417,7 +469,6 @@ p {
 .rd-content4 {
     padding: 3%;
     float: right;
-    font-family: 小塚ゴシック pro;
     color: #B25262;
 }
 .rd4-t1 {
@@ -486,7 +537,8 @@ p {
     margin-top: 2%;
     padding: 5%;
     width: 55vw;
-    height: 20vw;;
+    height: 20vw;
+    ;
     min-width: 225px;
     min-height: 200px;
     background-color: rgba(91, 151, 178, 0.8);
@@ -674,7 +726,6 @@ p {
     position: relative;
     overflow: hidden;
     z-index: 3;
-    ;
 }
 .form {
     display: flex;
@@ -697,7 +748,6 @@ input:first-of-type {
 }
 input, textarea {
     font-size: 1em;
-    font-family: 小塚ゴシック pro;
     padding: 15px 10px 10px;
     border: 1px solid #cecece;
     background: #666;
@@ -748,14 +798,12 @@ button:hover, .button:hover {
     width: 32px;
     height: 32px;
     margin: auto;
-    font-family: 小塚ゴシック pro;
     font-style: normal;
     font-weight: 600;
     font-size: 1.5em;
     letter-spacing: 0.15em;
 }
 label.error {
-    font-family: 小塚ゴシック pro;
     font-size: 1em;
     display: block;
     padding-top: 10px;
@@ -786,7 +834,6 @@ label.error {
     }
 }
 .message {
-    font-family: 小塚ゴシック pro;
     font-weight: 500;
     font-size: 1.1em;
     display: none;
@@ -823,14 +870,12 @@ footer {
 }
 .footer1 {
     color: #fff;
-    font-family: 小塚ゴシック Pro;
     font-size: 1.2vw;
     margin-left: 4%;
     margin-top: 1%;
 }
 .footer2 {
     color: #fff;
-    font-family: 小塚ゴシック Pro;
     font-size: 0.7vw;
     font-weight: 200;
     padding-left: 3%;

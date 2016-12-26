@@ -15,8 +15,9 @@
 
 <body>
     <!-- header -->
+
     <header>
-        <div class="main-visual">
+        <div class="main-visual" id="top">
             <h1><img src="./img/main-visual.png" alt="main-visual"></h1>
         </div>
 
@@ -54,21 +55,25 @@
             <!-- credit -->
             <p class="tp-credit">text: Keiko Okumura design:Keiko Okumura photo:Kenta Ichiki</p>
         </div>
+        <div class="scroll">
+            <a href="#about"><span></span><span></span><span></span></a>
+        </div>
     </header>
 
     <!-- main -->
     <main>
         <div class="fixed-menu">
             <ul>
-                <li><a href="about">about</a></li>
-                <li><a href="data">data</a></li>
-                <li><a href="ad-info">ad info</a></li>
-                <li><a href="contact">contact</a></li>
+                <li><a href="#top">top</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#data">data</a></li>
+                <li><a href="#ad-info">ad info</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </div>
 
         <!-- about-->
-        <div class="about">
+        <div class="about" id="about">
             <nav class="container">
                 <h1>1. mocoとは？</h1>
                 <img src="./img/udl-bl.png" alt="udl-bl" class="h1-udl">
@@ -86,7 +91,7 @@
         </div>
 
         <!-- data -->
-        <div class="data">
+        <div class="data" id="data">
             <!-- readers -->
             <div class="readers content-box">
                 <div class="container">
@@ -96,38 +101,38 @@
                     <img src="./img/udl-bl.png" alt="udl-bl" class="h2-udl rd-h2-udl">
                     <img src="./img/data.png" alt="data" class="dataimg">
 
-                    </div>
                 </div>
             </div>
+        </div>
 
-            <!-- place -->
-            <div class="place content-box">
-                <div class="container">
-                    <h2>2-2. 配布先情報</h2>
-                    <img src="./img/udl-ye.png" alt="udl-ye" class="h2-udl">
+        <!-- place -->
+        <div class="place content-box">
+            <div class="container">
+                <h2>2-2. 配布先情報</h2>
+                <img src="./img/udl-ye.png" alt="udl-ye" class="h2-udl">
 
-                    <div class="map">
-                        <a href=""><img src="./img/kyoto-bf.png" alt="kyoto-bf.png" class="kyoto-img"></a>
-                        <div class="data-box">
-                          <div class="sample">
-                              <h3 class="topic">京都</h3>
-                              <ul>
-                                  <li>立命館大学(衣笠)</li>
-                                  <li>同志社大学(今出川・京田辺)</li>
-                                  <li>同志社女子大学(今出川・京田辺)</li>
-                                  <li>京都大学(百万遍)</li>
-                                  <li>佛教大学</li>
-                                  <li>サークルK 対象店舗</li>
-                              </ul>
-                          </div>
+                <div class="map">
+                    <a href=""><img src="./img/kyoto-bf.png" alt="kyoto-bf.png" class="kyoto-img"></a>
+                    <div class="data-box">
+                        <div class="sample">
+                            <h3 class="topic">京都</h3>
+                            <ul>
+                                <li>立命館大学(衣笠)</li>
+                                <li>同志社大学(今出川・京田辺)</li>
+                                <li>同志社女子大学(今出川・京田辺)</li>
+                                <li>京都大学(百万遍)</li>
+                                <li>佛教大学</li>
+                                <li>サークルK 対象店舗</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="flex-img">
-                        <a href="place"><img src="./img/hyogo-bf.png" alt="hyogo-bf.png" class="hyogo-img"></a>
-                        <a href="place"><img src="./img/osaka-bf.png" alt="osaka-bf.png" class="osaka-img"></a>
-                        <a href="place"><img src="./img/shiga-bf.png" alt="shiga-bf.png" class="shiga-img"></a>
-                        <a href="place"><img src="./img/tokyo-bf.png" alt="tokyo-bf.png" class="tokyo-img"></a>
-                    </div>
+                </div>
+                <div class="flex-img">
+                    <a href="place"><img src="./img/hyogo-bf.png" alt="hyogo-bf.png" class="hyogo-img"></a>
+                    <a href="place"><img src="./img/osaka-bf.png" alt="osaka-bf.png" class="osaka-img"></a>
+                    <a href="place"><img src="./img/shiga-bf.png" alt="shiga-bf.png" class="shiga-img"></a>
+                    <a href="place"><img src="./img/tokyo-bf.png" alt="tokyo-bf.png" class="tokyo-img"></a>
+                </div>
 
                 <div class="pl-contents">
                     <div class="kyoto">
@@ -194,11 +199,11 @@
                         </ul>
                     </div>
                 </div>
-              </div>
             </div>
+        </div>
 
         <!-- ad info about-->
-        <div class="ad-info">
+        <div class="ad-info" id="ad-info">
             <!-- ad info_navigation -->
             <div class="ad-navi content-box">
                 <div class="container">
@@ -206,7 +211,7 @@
                     <img src="./img/udl-bl.png" alt="udl-bl" class="h1-udl adnv-udl">
                     <img src="./img/ad-navi.png" alt="ad-navi" class="ad-navi-img">
                     <h3 class="ad-navi1">詳細については</h3>
-                    <h3 class="contact-btn"><a href="contact">お問い合わせフォーム</a></h3>
+                    <h3 class="contact-btn"><a href="#contact">お問い合わせフォーム</a></h3>
                     <h3 class="ad-navi2">まで</h3>
                     <p class="ad-navi3">挟み込み広告・懸賞記事等についてもお気軽にご相談ください。</p>
                 </div>
@@ -224,7 +229,7 @@
         </div>
 
         <!-- contact -->
-        <div class="contact  content-box">
+        <div class="contact  content-box" id="contact">
             <div class="container">
                 <div class="topic4">
                     <h1>4. お問い合わせ</h1>
@@ -285,7 +290,7 @@
     </footer>
     <script src="./js/jquery-3.0.0.min.js" charset="utf-8"></script>
     <script src="./js/d3.min.js" charset="utf-8"></script>
-    <script src="./js/moco.js" charset="utf-8"></script>
+    <!--<script src="./js/moco.js" charset="utf-8"></script>-->
 </body>
 
 </html>
